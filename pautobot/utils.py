@@ -26,6 +26,16 @@ SUPPORTED_DOCUMENT_TYPES = [
     ".pptx",
     ".ppt",
     ".txt",
+    ".py",
+    ".js",
+    ".jsx",
+    ".php",
+    ".ts",
+    ".tsx",
+    ".html",
+    ".htm",
+    ".java",
+    ".cpp",
 ]
 
 
@@ -116,8 +126,10 @@ def download_model(model_type, model_path):
         - Support more model types
         - Multiple download links
         - Check hash of the downloaded file
+        - Original default model: ggml-gpt4all-j-v1.3-groovy
     """
-    MODEL_URL = DEFAULT_MODEL_URLS["ggml-gpt4all-j-v1.3-groovy"]
+    MODEL_URL = DEFAULT_MODEL_URLS["ggml-replit-code-v1-3b"]
+
     if not os.path.exists(model_path):
         logging.info("Downloading model...")
         try:

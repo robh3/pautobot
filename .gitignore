@@ -145,3 +145,4 @@ cython_debug/
 node_modules
 .next
 pautobot/frontend-dist
+frontend/package-lock.json

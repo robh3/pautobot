@@ -8,6 +8,7 @@ export default function ModelSelector() {
           defaultValue={"GPT4All-J v1.3-groovy"}
         >
           <option value="GPT4All-J v1.3-groovy">GPT4All-J v1.3-groovy</option>
+          <option value="Replit Code v1.3b">Replit Code v1.3b</option>
         </select>
       </div>
       <div className="mt-4 ml-2 text-sm">
