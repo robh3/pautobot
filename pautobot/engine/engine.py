@@ -25,7 +25,8 @@ class PautoBotEngine:
         self.model_path = os.path.join(
             DATA_ROOT,
             "models",
-            "ggml-gpt4all-j-v1.3-groovy.bin",
+            #"ggml-gpt4all-j-v1.3-groovy.bin",
+            "ggml-replit-code-v1-3b.bin",
         )
         self.context_manager = context_manager
         if not self.context_manager.get_contexts():

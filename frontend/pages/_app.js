@@ -13,7 +13,7 @@ export default function RootLayout({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>PAutoBot - Your Private GPT Assistant</title>
+        <title>DocuChat - Your Private GPT Assistant</title>
       </Head>
       <div className={bai_jam.className}>
         <Component {...pageProps} />

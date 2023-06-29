@@ -1,14 +1,14 @@
+import { useEffect, useRef, useState } from "react";
 import { toast } from "react-toastify";
-import { useState, useRef, useEffect } from "react";
 
-import LoadingIcon from "./icons/LoadingIcon";
+import { getBotInfo } from "@/lib/requests/bot";
 import {
-  openDocument,
   deleteDocument,
   getDocuments,
+  openDocument,
   uploadDocument,
 } from "@/lib/requests/documents";
-import { getBotInfo } from "@/lib/requests/bot";
+import LoadingIcon from "./icons/LoadingIcon";
 
 export default function QADBManager() {
   const SUPPORTED_FILE_TYPES = [
@@ -27,6 +27,16 @@ export default function QADBManager() {
     ".ppt",
     ".txt",
     ".zip",
+    ".py",
+    ".js",
+    ".jsx",
+    ".php",
+    ".ts",
+    ".tsx",
+    ".html",
+    ".htm",
+    ".java",
+    ".cpp",
   ];
 
   const fileInput = useRef(null);
